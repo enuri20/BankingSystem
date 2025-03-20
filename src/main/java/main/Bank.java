@@ -14,7 +14,8 @@ public class Bank {
         Account account = accounts.stream().filter(account1 -> account1.getAccountId().equals(accountId)).findFirst().orElse(null);
         if (account == null) {
             System.out.println("Invalid AccountID");
-            return Float.parseFloat(null);
+            return -1.0f;
+
         }
         else return account.getBalance();
 
@@ -40,7 +41,7 @@ public class Bank {
         if (account == null) {
             System.out.println("Invalid AccountID");
         } else if (account.getBalance() < amount) {
-            System.out.println("Insufficient Balance");
+            System.out.println("Insufficient Funds");
 
         } else if (account.isFixedDeposit()) {
             System.out.println("Cannot withdraw money from a Fixed Deposit Account");
@@ -59,7 +60,9 @@ public class Bank {
 
 
 
+
     public static void main(String[] args) {
         System.out.println("Welcome to the Bank!");
+
     }
 }
