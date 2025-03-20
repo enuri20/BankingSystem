@@ -1,0 +1,14 @@
+
+”
+java:S1192"RDefine a constant instead of duplicating this literal "Invalid AccountID" 3 times.(ÔİÖ8µµ¸˜Û2J$66759bba-2563-415b-9ff5-5b339c25439f
+l	java:S106"+Replace this use of System.out by a logger.(ÔİÖ8ıµ½˜Û2J$e706c939-c630-49b0-9f1f-708e93947012
+l	java:S106"+Replace this use of System.out by a logger.(ÔİÖ8ÿµ½˜Û2J$25b2b33e-c93b-4503-a894-cd118f364242
+m	java:S106"+Replace this use of System.out by a logger.(€¸äÙ8ÿµ½˜Û2J$3bc67933-7687-4ff7-b85c-a6f8f8f7fd24
+r	java:S106!"+Replace this use of System.out by a logger.(‹òÏùøÿÿÿÿ8ÿµ½˜Û2J$16e6166c-7adc-4e8c-ac09-fd3eb8f7ce63
+l	java:S106)"+Replace this use of System.out by a logger.(ÔİÖ8¶½˜Û2J$4d8a76f1-8697-412f-b01f-3a45b590aced
+r	java:S106+"+Replace this use of System.out by a logger.(ÿéÀúÿÿÿÿ8¶½˜Û2J$eaaec6a3-48e7-4e10-af46-888433ff5210
+l	java:S106."+Replace this use of System.out by a logger.(é·­48¶½˜Û2J$489a8d5d-8e90-4f57-985d-7b0558cd21e2
+r	java:S1062"+Replace this use of System.out by a logger.(‹òÏùøÿÿÿÿ8‚¶½˜Û2J$d10436f0-8efd-4ca3-a25b-4a953f69d600
+r	java:S106?"+Replace this use of System.out by a logger.(É—ç¬úÿÿÿÿ8ïÂı˜Û2J$2c06a0f9-19e9-4847-9a62-d03e7d886b8c
+u
+java:S1068"-Remove this unused "customers" private field.(åŒôøüÿÿÿÿ8‚¶½˜Û2J$a76b94a7-550d-424f-b47b-cb4fc69d0b26
