@@ -1,17 +1,19 @@
 import main.Account;
 import main.Bank;
 import main.Customer;
+import main.CustomerNotFoundException;
 import org.easymock.Mock;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
+import java.util.ArrayList;
 import java.util.List;
 
 
 import static org.easymock.EasyMock.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class BankTest {
     private final ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
@@ -101,6 +103,44 @@ public class BankTest {
         assertEquals(-1.0f, bank.checkBalance("20000"));
 
     }
+    @Test
+    void setFixedDepositSuccess() {
+        assertTrue(bank.createFixedDeposit("1001"));
+    }
+
+    @Test
+    void setFixedDepositFail() {
+        assertFalse(bank.createFixedDeposit("20000"));
+        assertEquals("Invalid AccountID\n", byteArrayOutputStream.toString());
+        System.setOut(printStream);
+
+    }
+    @Test
+    void getOwnerOfAccountSuccess() {
+        assertEquals(john, bank.getOwnerOfAccount("1001"));
+
+    }
+    @Test
+    void getOwnerOfAccountFail() {
+        assertEquals(null, bank.getOwnerOfAccount("200000"));
+        assertEquals("Invalid AccountID\n", byteArrayOutputStream.toString());
+        System.setOut(printStream);
+    }
+
+    @Test
+    void getAccountsOfCustomerSuccess() throws CustomerNotFoundException {
+        john.setAccounts(new ArrayList<>(List.of(john1, john2)));
+        assertEquals(new ArrayList<>(List.of("1001", "1002")), bank.getAccountIDsOfCustomer("100"));
+        assertDoesNotThrow(() -> bank.getAccountIDsOfCustomer("200"));
+    }
+    @Test
+    void getAccountsOfCustomerFail() throws CustomerNotFoundException {
+        CustomerNotFoundException thrown =
+                assertThrows(CustomerNotFoundException.class, ()->bank.getAccountIDsOfCustomer("20000"));
+    }
+
+
+
 
 
 

@@ -46,3 +46,5 @@ w
 G.idea/sonarlint/issuestore/f/0/f07866736216be0ee2aba49e392191aeae700a35,b/f/bfb9453d49af9bc40f5f7a5f034be3c7ef8fa6bf
 9
 	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+a
+1src/main/java/main/CustomerNotFoundException.java,9/2/9208311df52ecd77a41feb29c32d3365b483b2b6

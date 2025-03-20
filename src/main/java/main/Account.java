@@ -43,6 +43,7 @@ public class Account {
 
     public void setFixedDeposit(boolean fixedDeposit) {
         isFixedDeposit = fixedDeposit;
+
     }
 
     @Override

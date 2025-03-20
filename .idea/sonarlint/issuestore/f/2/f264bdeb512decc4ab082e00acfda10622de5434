@@ -1,14 +1,14 @@
 
 ”
-java:S1192"RDefine a constant instead of duplicating this literal "Invalid AccountID" 3 times.(ÔÝÖ8Çµµ Û2J$e6e22353-65bd-4289-9bf5-7f51c058a87f
-l	java:S106"+Replace this use of System.out by a logger.(ÔÝÖ8Ïµµ Û2J$6df5d07f-35af-46e9-a0d7-7b7f1f4fc9e7
-l	java:S106"+Replace this use of System.out by a logger.(ÔÝÖ8Ñµµ Û2J$149f37c6-b73c-4350-b97a-79c80f7458df
-m	java:S106"+Replace this use of System.out by a logger.(€¸äÙ8Ñµµ Û2J$9ee8511e-99ac-4c49-9819-0c3d43f8f69d
-r	java:S106""+Replace this use of System.out by a logger.(‹òÏùøÿÿÿÿ8Ñµµ Û2J$ef2cd4a7-d030-483c-868c-72df5492150e
-l	java:S106*"+Replace this use of System.out by a logger.(ÔÝÖ8Òµµ Û2J$a227cd93-b43a-4b82-8d3c-5e8062ac8c43
-m	java:S106,"+Replace this use of System.out by a logger.(ÄöõÅ8Òµµ Û2J$7584af8d-5718-4aa1-8447-13a39a49e355
-l	java:S106/"+Replace this use of System.out by a logger.(é·­48Óµµ Û2J$8e5b65e6-f449-4234-9a3d-852f7d488e09
-r	java:S1063"+Replace this use of System.out by a logger.(‹òÏùøÿÿÿÿ8Óµµ Û2J$264f19f6-5484-41aa-8054-bbbfa0c6066d
-r	java:S106A"+Replace this use of System.out by a logger.(É—ç¬úÿÿÿÿ8Óµµ Û2J$61adf031-d9bf-4676-b737-7fb8dd4e9055
-u
-java:S1068"-Remove this unused "customers" private field.(åŒôøüÿÿÿÿ8Ôµµ Û2J$e4f15d37-827c-4259-af26-b10684f1df6f
+java:S1192"RDefine a constant instead of duplicating this literal "Invalid AccountID" 5 times.(ÔÝÖ8—é±¡Û2J$8497caca-cf5f-4faf-b6ac-d57633188ecb
+l	java:S106"+Replace this use of System.out by a logger.(ÔÝÖ8¡é±¡Û2J$02af6c99-be14-43ee-9571-9c65640c0383
+l	java:S106"+Replace this use of System.out by a logger.(ÔÝÖ8¢é±¡Û2J$a3cdf480-38ff-4538-a762-68c861d992f7
+m	java:S106"+Replace this use of System.out by a logger.(€¸äÙ8¢é±¡Û2J$b8825291-5376-4fe1-9d9d-bf27b9627d22
+r	java:S106#"+Replace this use of System.out by a logger.(‹òÏùøÿÿÿÿ8£é±¡Û2J$56620969-5012-46c4-8813-000cd4f83c43
+l	java:S106+"+Replace this use of System.out by a logger.(ÔÝÖ8£é±¡Û2J$58543235-ece0-41c9-9d8d-7417f32f9505
+m	java:S106-"+Replace this use of System.out by a logger.(ÄöõÅ8¤é±¡Û2J$89c0927c-beb1-40bd-a8ec-6994059b7bc8
+l	java:S1060"+Replace this use of System.out by a logger.(é·­48¤é±¡Û2J$2c1d5276-5445-435f-a56c-3c769c1df475
+r	java:S1064"+Replace this use of System.out by a logger.(‹òÏùøÿÿÿÿ8¤é±¡Û2J$79c2b1d2-7768-45e9-a481-a8bd0ba0e9fa
+l	java:S106<"+Replace this use of System.out by a logger.(ÔÝÖ8¥é±¡Û2J$acf3bfb8-f73b-40cc-93aa-96eaee6dbb28
+l	java:S106J"+Replace this use of System.out by a logger.(ÔÝÖ8¦é±¡Û2J$c596268c-2f44-4205-aa92-789a04ee6a79
+r	java:S106d"+Replace this use of System.out by a logger.(É—ç¬úÿÿÿÿ8¨é±¡Û2J$cae65c55-7399-4070-b819-fd4817519322

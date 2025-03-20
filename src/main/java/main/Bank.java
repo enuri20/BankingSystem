@@ -1,5 +1,6 @@
 package main;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Bank {
@@ -53,9 +54,43 @@ public class Bank {
 
 
     }
+    public boolean createFixedDeposit(String accountId) {
+        Account account = accounts.stream().filter(account1 -> account1.getAccountId().equals(accountId)).findFirst().orElse(null);
+        if (account == null) {
+            System.out.println("Invalid AccountID");
+            return false;
+        }
 
+        else {
+            account.setFixedDeposit(true);
+            return true;
+        }
 
+    }
 
+    public Customer getOwnerOfAccount(String accountId) {
+        Account account = accounts.stream().filter(account1 -> account1.getAccountId().equals(accountId)).findFirst().orElse(null);
+        if (account == null) {
+            System.out.println("Invalid AccountID");
+            return null;
+        }
+        else {
+            return account.getCustomer();
+
+        }
+
+    }
+
+    public List<String> getAccountIDsOfCustomer(String customerId) throws CustomerNotFoundException {
+        Customer customer = customers.stream().filter(customer1 -> customer1.getCustomerId().equals(customerId)).findFirst().orElseThrow(CustomerNotFoundException::new);
+        List<String> accountsList = new ArrayList<>();
+        for (Account account: customer.getAccounts()) {
+            accountsList.add(account.getAccountId());
+
+        }
+
+        return accountsList;
+    }
 
 
 
